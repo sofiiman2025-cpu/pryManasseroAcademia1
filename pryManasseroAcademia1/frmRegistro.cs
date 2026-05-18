@@ -16,5 +16,10 @@ namespace pryManasseroAcademia1
         {
             InitializeComponent();
         }
+
+        private void btnListado_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

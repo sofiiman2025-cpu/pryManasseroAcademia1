@@ -16,5 +16,13 @@ namespace pryManasseroAcademia1
         {
             InitializeComponent();
         }
+
+        private void btnIniciar_Click(object sender, EventArgs e)
+        {
+            frmRegistro frmRegistro = new frmRegistro();
+            this.Hide();
+            frmRegistro.ShowDialog();
+            this.Show();
+        }
     }
 }

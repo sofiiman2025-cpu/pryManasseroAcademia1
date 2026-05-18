@@ -34,20 +34,21 @@
             // 
             // btnIniciar
             // 
-            this.btnIniciar.Location = new System.Drawing.Point(61, 93);
+            this.btnIniciar.Location = new System.Drawing.Point(71, 105);
             this.btnIniciar.Name = "btnIniciar";
-            this.btnIniciar.Size = new System.Drawing.Size(75, 23);
+            this.btnIniciar.Size = new System.Drawing.Size(108, 23);
             this.btnIniciar.TabIndex = 0;
             this.btnIniciar.Text = "Iniciar";
             this.btnIniciar.UseVisualStyleBackColor = true;
+            this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
             // 
             // lblBienvenido
             // 
             this.lblBienvenido.AutoSize = true;
-            this.lblBienvenido.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBienvenido.Location = new System.Drawing.Point(42, 35);
+            this.lblBienvenido.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBienvenido.Location = new System.Drawing.Point(67, 38);
             this.lblBienvenido.Name = "lblBienvenido";
-            this.lblBienvenido.Size = new System.Drawing.Size(94, 19);
+            this.lblBienvenido.Size = new System.Drawing.Size(112, 22);
             this.lblBienvenido.TabIndex = 1;
             this.lblBienvenido.Text = "¡Bienvenido!";
             // 
@@ -56,7 +57,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(182, 167);
+            this.ClientSize = new System.Drawing.Size(245, 189);
             this.Controls.Add(this.lblBienvenido);
             this.Controls.Add(this.btnIniciar);
             this.Name = "frmInicio";
