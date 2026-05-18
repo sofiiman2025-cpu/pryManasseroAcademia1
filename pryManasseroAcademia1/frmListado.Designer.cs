@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.grpBuscar = new System.Windows.Forms.GroupBox();
+            this.btnBuscar = new System.Windows.Forms.Button();
             this.rbPlan = new System.Windows.Forms.RadioButton();
             this.rbNombre = new System.Windows.Forms.RadioButton();
             this.rbCodigo = new System.Windows.Forms.RadioButton();
             this.rbTodo = new System.Windows.Forms.RadioButton();
-            this.btnBuscar = new System.Windows.Forms.Button();
             this.grpBuscar.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,6 +51,15 @@
             this.grpBuscar.TabIndex = 0;
             this.grpBuscar.TabStop = false;
             this.grpBuscar.Text = "Buscar";
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Location = new System.Drawing.Point(114, 183);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(69, 23);
+            this.btnBuscar.TabIndex = 4;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
             // 
             // rbPlan
             // 
@@ -96,15 +105,6 @@
             this.rbTodo.Text = "Todo";
             this.rbTodo.UseVisualStyleBackColor = true;
             // 
-            // btnBuscar
-            // 
-            this.btnBuscar.Location = new System.Drawing.Point(114, 183);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(69, 23);
-            this.btnBuscar.TabIndex = 4;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = true;
-            // 
             // frmListado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -113,7 +113,7 @@
             this.ClientSize = new System.Drawing.Size(251, 285);
             this.Controls.Add(this.grpBuscar);
             this.Name = "frmListado";
-            this.Text = "frmListado";
+            this.Text = "Listado";
             this.grpBuscar.ResumeLayout(false);
             this.grpBuscar.PerformLayout();
             this.ResumeLayout(false);

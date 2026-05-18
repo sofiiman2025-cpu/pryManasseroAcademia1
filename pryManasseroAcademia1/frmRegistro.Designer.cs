@@ -95,6 +95,7 @@
             // 
             // cmbPlan
             // 
+            this.cmbPlan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbPlan.FormattingEnabled = true;
             this.cmbPlan.Items.AddRange(new object[] {
             "Año",
@@ -176,7 +177,7 @@
             this.Controls.Add(this.grpRegistro);
             this.Name = "frmRegistro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmRegistro";
+            this.Text = "Registro";
             this.grpRegistro.ResumeLayout(false);
             this.grpRegistro.PerformLayout();
             this.ResumeLayout(false);

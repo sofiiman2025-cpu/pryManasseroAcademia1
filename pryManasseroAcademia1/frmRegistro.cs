@@ -41,24 +41,24 @@ namespace pryManasseroAcademia1
                 MessageBox.Show("Complete todos los campos", "Registro académico", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             else
-            {
-           
+            {           
+                if (chkActivo.Checked)
+                {
+                    estado = "Activo";
+                }
+                else
+                {
+                    estado = "Inactivo";
+                }
 
+                MessageBox.Show(
+                    "Registro completo\n\n" + 
+                    "Codigo: " + txtCodigo.Text +
+                    "\nNombre: " + txtNombre.Text + 
+                    "\nPlan: " + cmbPlan.Text + 
+                    "\nEstado: " + estado);
             }
-            if (chkActivo.Checked)
-            {
-                estado = "Activo";
-            }
-            else
-            {
-                estado = "Inactivo";
-            }
-            MessageBox.Show(
-                "Registro completo\n\n" + 
-                "Codigo: " + txtCodigo.Text +
-                "\nNombre: " + txtNombre.Text + 
-                "\nPlan: " + cmbPlan.Text + 
-                "\nEstado: " + estado);
+
 
         }
     }
