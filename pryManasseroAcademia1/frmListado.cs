@@ -10,20 +10,11 @@ using System.Windows.Forms;
 
 namespace pryManasseroAcademia1
 {
-    public partial class frmRegistro : Form
+    public partial class frmListado : Form
     {
-        public frmRegistro()
+        public frmListado()
         {
             InitializeComponent();
-        }
-
-        private void btnListado_Click(object sender, EventArgs e)
-        {
-            frmListado frmListado = new frmListado();   
-            this.Hide();
-            frmListado.ShowDialog();
-            this.Show();
-
         }
     }
 }

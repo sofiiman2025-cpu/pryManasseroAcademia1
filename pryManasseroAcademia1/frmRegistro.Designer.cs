@@ -57,6 +57,7 @@
             this.grpRegistro.Controls.Add(this.lblPlan);
             this.grpRegistro.Controls.Add(this.lblNombre);
             this.grpRegistro.Controls.Add(this.lblCodigo);
+            this.grpRegistro.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpRegistro.Location = new System.Drawing.Point(27, 31);
             this.grpRegistro.Name = "grpRegistro";
             this.grpRegistro.Size = new System.Drawing.Size(299, 287);
@@ -117,22 +118,25 @@
             // 
             this.txtCodigo.Location = new System.Drawing.Point(90, 36);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(100, 20);
+            this.txtCodigo.Size = new System.Drawing.Size(100, 23);
             this.txtCodigo.TabIndex = 5;
             // 
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(90, 87);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(100, 20);
+            this.txtNombre.Size = new System.Drawing.Size(100, 23);
             this.txtNombre.TabIndex = 6;
             // 
             // cmbPlan
             // 
             this.cmbPlan.FormattingEnabled = true;
+            this.cmbPlan.Items.AddRange(new object[] {
+            "Año",
+            "Semestre"});
             this.cmbPlan.Location = new System.Drawing.Point(90, 135);
             this.cmbPlan.Name = "cmbPlan";
-            this.cmbPlan.Size = new System.Drawing.Size(100, 21);
+            this.cmbPlan.Size = new System.Drawing.Size(100, 25);
             this.cmbPlan.TabIndex = 7;
             // 
             // btnListado
