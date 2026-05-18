@@ -20,9 +20,19 @@ namespace pryManasseroAcademia1
         private void btnIniciar_Click(object sender, EventArgs e)
         {
             frmRegistro frmRegistro = new frmRegistro();
+
+            frmRegistro.varInicioSesion = DateTime.Now;
+
             this.Hide();
             frmRegistro.ShowDialog();
             this.Show();
+        }
+
+        private void frmInicio_Load(object sender, EventArgs e)
+        {
+            //almacenar la fecha y hora de inicio de sesión
+            //variables
+            //varInicioSesion = DateTime.Now; //inicio de variables
         }
     }
 }
