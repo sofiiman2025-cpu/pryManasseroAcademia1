@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace pryManasseroAcademia1
 {
-    public partial class frmInicio : Form
+    public partial class frmRegistro : Form
     {
-        public frmInicio()
+        public frmRegistro()
         {
             InitializeComponent();
         }
