@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.lblNombrePlan = new System.Windows.Forms.Label();
-            this.cmbPlan = new System.Windows.Forms.ComboBox();
             this.btnListar = new System.Windows.Forms.Button();
             this.btnRegistrar = new System.Windows.Forms.Button();
+            this.txtPlan = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lblNombrePlan
@@ -43,14 +43,6 @@
             this.lblNombrePlan.Size = new System.Drawing.Size(112, 19);
             this.lblNombrePlan.TabIndex = 0;
             this.lblNombrePlan.Text = "Nombre del Plan";
-            // 
-            // cmbPlan
-            // 
-            this.cmbPlan.FormattingEnabled = true;
-            this.cmbPlan.Location = new System.Drawing.Point(129, 29);
-            this.cmbPlan.Name = "cmbPlan";
-            this.cmbPlan.Size = new System.Drawing.Size(121, 21);
-            this.cmbPlan.TabIndex = 1;
             // 
             // btnListar
             // 
@@ -73,17 +65,25 @@
             this.btnRegistrar.UseVisualStyleBackColor = true;
             this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
+            // txtPlan
+            // 
+            this.txtPlan.Location = new System.Drawing.Point(139, 32);
+            this.txtPlan.Name = "txtPlan";
+            this.txtPlan.Size = new System.Drawing.Size(100, 20);
+            this.txtPlan.TabIndex = 4;
+            // 
             // frmCargaPlan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(360, 155);
+            this.Controls.Add(this.txtPlan);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.btnListar);
-            this.Controls.Add(this.cmbPlan);
             this.Controls.Add(this.lblNombrePlan);
             this.Name = "frmCargaPlan";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Carga Plan";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -93,8 +93,8 @@
         #endregion
 
         private System.Windows.Forms.Label lblNombrePlan;
-        private System.Windows.Forms.ComboBox cmbPlan;
         private System.Windows.Forms.Button btnListar;
         private System.Windows.Forms.Button btnRegistrar;
+        private System.Windows.Forms.TextBox txtPlan;
     }
 }

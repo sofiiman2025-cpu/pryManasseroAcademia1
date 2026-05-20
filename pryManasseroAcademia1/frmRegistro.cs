@@ -61,5 +61,13 @@ namespace pryManasseroAcademia1
 
 
         }
+
+        private void btnCargadePlan_Click(object sender, EventArgs e)
+        {
+            frmCargaPlan frmCargaPlan = new frmCargaPlan();
+            this.Hide();
+            frmCargaPlan.ShowDialog();
+            this.Show();
+        }
     }
 }

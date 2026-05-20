@@ -40,11 +40,13 @@
             this.lblPlan = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblCodigo = new System.Windows.Forms.Label();
+            this.btnCargadePlan = new System.Windows.Forms.Button();
             this.grpRegistro.SuspendLayout();
             this.SuspendLayout();
             // 
             // grpRegistro
             // 
+            this.grpRegistro.Controls.Add(this.btnCargadePlan);
             this.grpRegistro.Controls.Add(this.btnRegistrar);
             this.grpRegistro.Controls.Add(this.btnCancelar);
             this.grpRegistro.Controls.Add(this.btnListado);
@@ -57,16 +59,16 @@
             this.grpRegistro.Controls.Add(this.lblNombre);
             this.grpRegistro.Controls.Add(this.lblCodigo);
             this.grpRegistro.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpRegistro.Location = new System.Drawing.Point(27, 31);
+            this.grpRegistro.Location = new System.Drawing.Point(12, 12);
             this.grpRegistro.Name = "grpRegistro";
-            this.grpRegistro.Size = new System.Drawing.Size(267, 287);
+            this.grpRegistro.Size = new System.Drawing.Size(356, 280);
             this.grpRegistro.TabIndex = 0;
             this.grpRegistro.TabStop = false;
             this.grpRegistro.Text = "Registro materia/asignatura";
             // 
             // btnRegistrar
             // 
-            this.btnRegistrar.Location = new System.Drawing.Point(179, 237);
+            this.btnRegistrar.Location = new System.Drawing.Point(165, 239);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(75, 27);
             this.btnRegistrar.TabIndex = 10;
@@ -76,7 +78,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(99, 237);
+            this.btnCancelar.Location = new System.Drawing.Point(85, 239);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 27);
             this.btnCancelar.TabIndex = 9;
@@ -85,7 +87,7 @@
             // 
             // btnListado
             // 
-            this.btnListado.Location = new System.Drawing.Point(18, 237);
+            this.btnListado.Location = new System.Drawing.Point(4, 239);
             this.btnListado.Name = "btnListado";
             this.btnListado.Size = new System.Drawing.Size(75, 27);
             this.btnListado.TabIndex = 8;
@@ -168,12 +170,22 @@
             this.lblCodigo.TabIndex = 0;
             this.lblCodigo.Text = "Código";
             // 
+            // btnCargadePlan
+            // 
+            this.btnCargadePlan.Location = new System.Drawing.Point(245, 239);
+            this.btnCargadePlan.Name = "btnCargadePlan";
+            this.btnCargadePlan.Size = new System.Drawing.Size(102, 27);
+            this.btnCargadePlan.TabIndex = 11;
+            this.btnCargadePlan.Text = "Carga de plan";
+            this.btnCargadePlan.UseVisualStyleBackColor = true;
+            this.btnCargadePlan.Click += new System.EventHandler(this.btnCargadePlan_Click);
+            // 
             // frmRegistro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(350, 339);
+            this.ClientSize = new System.Drawing.Size(381, 300);
             this.Controls.Add(this.grpRegistro);
             this.Name = "frmRegistro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -198,5 +210,6 @@
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnListado;
+        private System.Windows.Forms.Button btnCargadePlan;
     }
 }

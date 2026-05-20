@@ -26,7 +26,14 @@ namespace pryManasseroAcademia1
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
-
+            if (txtPlan.Text != "")
+            {
+               arrayPlan[varIndice] = txtPlan.Text;
+                varIndice++;
+                MessageBox.Show("Plan registrado", "Registro de datos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                txtPlan.Clear();
+            }
+            
         }
     }
 }
