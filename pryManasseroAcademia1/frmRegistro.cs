@@ -18,6 +18,11 @@ namespace pryManasseroAcademia1
         string varNombre;
         string varPlan;
         bool varEstado;
+
+        int indiceFIla = 0;
+        string[,] matMaterias = new string[2, 5];
+
+
         public frmRegistro()
         {
             InitializeComponent();
@@ -39,9 +44,20 @@ namespace pryManasseroAcademia1
             if (txtCodigo.Text == "" || txtNombre.Text == "" || cmbPlan.Text == "")
             {
                 MessageBox.Show("Complete todos los campos", "Registro académico", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                cmbPlan.Focus();
             }
             else
-            {           
+            {
+                // varCodigo = Convert.ToInt32(txtCodigo.Text);
+                // varNombre = txtNombre.Text;
+                // varPlan = cmbPlan.Text;
+
+                matMaterias[indiceFIla,0] = txtCodigo.Text;
+                matMaterias[indiceFIla,1] = txtNombre.Text;
+                matMaterias[indiceFIla,2] = cmbPlan.Text;
+               
+
+
                 if (chkActivo.Checked)
                 {
                     estado = "Activo";
@@ -58,7 +74,7 @@ namespace pryManasseroAcademia1
                     "\nPlan: " + cmbPlan.Text + 
                     "\nEstado: " + estado);
             }
-
+            indiceFIla++;
 
         }
 
