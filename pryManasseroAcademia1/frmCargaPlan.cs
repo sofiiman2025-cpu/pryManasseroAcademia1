@@ -29,11 +29,34 @@ namespace pryManasseroAcademia1
             if (txtPlan.Text != "")
             {
                arrayPlan[varIndice] = txtPlan.Text;
-                varIndice++;
-                MessageBox.Show("Plan registrado", "Registro de datos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                varIndice++;    
+
                 txtPlan.Clear();
+
+                if (varIndice > arrayPlan.Length)
+                {             
+                    btnRegistrar.Enabled = false;
+                    txtPlan.Enabled = false;
+                }
             }
             
+        }
+
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            //int indiceRecorrido = 0;
+
+            //while (indiceRecorrido < arrayPlan.Length)
+            //{
+            //    lstPlanes.Items.Add(arrayPlan[indiceRecorrido]);
+            //    indiceRecorrido++;
+
+            //}
+
+            for (int i = 0; i < arrayPlan.Length; i++)
+            {
+                lstPlanes.Items.Add(arrayPlan[i]);
+            }
         }
     }
 }
