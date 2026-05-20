@@ -69,5 +69,10 @@ namespace pryManasseroAcademia1
             frmCargaPlan.ShowDialog();
             this.Show();
         }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }
